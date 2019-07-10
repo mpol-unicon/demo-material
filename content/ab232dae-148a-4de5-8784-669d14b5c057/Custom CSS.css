@@ -1,0 +1,821 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i");
+/* line 6, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+body {
+  line-height: 1; }
+
+/* line 34, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 37, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 40, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 89, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.GL-wrapper {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  color: #2B2D2E;
+  line-height: 1.7;
+  font-size: 1.063em; }
+  /* line 99, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper a {
+    color: #5289B3;
+    font-weight: 500;
+    text-decoration: underline; }
+    /* line 103, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper a:hover {
+      color: #467599; }
+  /* line 107, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper p {
+    margin-bottom: 1.5em; }
+    /* line 109, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper p span.drop-cap {
+      text-transform: uppercase;
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      float: left;
+      margin-right: 10px;
+      line-height: 1.45;
+      border-radius: 100px;
+      background-color: #5289B3;
+      color: white;
+      font-size: 2.07617em;
+      width: 50px;
+      height: 50px; }
+  /* line 126, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper b {
+    font-weight: 700; }
+.GL-wrapper i {
+    font-style: italic; }
+  /* line 129, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper h1, .GL-wrapper h2, .GL-wrapper h3, .GL-wrapper h4, .GL-wrapper h5 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.375em;
+    line-height: 1.4; }
+  /* line 134, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper h1 {
+    font-size: 3.24402em;
+    font-weight: 300;
+    line-height: 1.4; }
+  /* line 139, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper h2 {
+    font-size: 2.59521em;
+    line-height: 1.4; }
+  /* line 143, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper h3 {
+    font-size: 2.07617em; }
+  /* line 146, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper h4 {
+    font-size: 1.66094em; }
+  /* line 149, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper h5 {
+    font-size: 1.32875em;
+    font-weight: 500; }
+  /* line 153, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .clear {
+    clear: both; }
+  /* line 157, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .title-icon img {
+    border: none;
+    height: 30px;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 12px; }
+  /* line 166, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .title {
+    background-repeat: no-repeat;
+    background-position: left 50%;
+    background-size: 40px auto;
+    padding-left: 54px;
+    font-weight: 300; }
+  /* line 176, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .video {
+    background-image: url("icon-video-blue-h3ew-yb6c.svg"); }
+  /* line 179, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .reading {
+    background-image: url("icon-reading-blue-05di.svg"); }
+  /* line 182, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .learning-outcomes {
+    background-image: url("icon-learning-outcomes-blue-mzdw.svg");
+    background-size: 32px auto; }
+  /* line 186, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .learning-activities {
+    background-image: url("icon-learning-activities-blue-e1vn.svg"); }
+  /* line 189, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .cue-card {
+    background-image: url("icon-cue-cards-blue-bf2k.svg"); }
+  /* line 192, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .case-study {
+    background-image: url("icon-case-study-blue-4e3e.svg"); }
+  /* line 195, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .journaling {
+    background-image: url("icon-journaling-blue-cndr.svg"); }
+  /* line 198, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .tools {
+    background-image: url("icon-tools-blue-1mp3.svg"); }
+  /* line 201, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .coach {
+    background-image: url("icon-coach-check-blue-ikrw.svg");
+    background-size: 46px auto; }
+  /* line 205, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .wrap-up {
+    background-image: url("icon-wrap-up-blue-hwao.svg"); }
+  /* line 179, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .course-img {
+    position: relative;
+    margin-bottom: 1.5em;
+    left: -138px;
+    min-width: 976px;
+    height: auto; }
+    /* line 185, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .course-img img {
+      width: 100%;
+      height: auto;
+      border: none;
+      margin: 0px; }
+  /* line 192, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .course-page-head {
+    position: relative;
+    height: 64px;
+    width: 976px;
+    left: -138px;
+    background-repeat: no-repeat;
+    background-size: 55px auto;
+    background-position: left 50%; }
+    /* line 203, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .course-page-head .line {
+      position: relative;
+      top: 49%;
+      left: 70px;
+      background-color: #5289B3;
+      height: 3px;
+      width: calc(100% - 70px); }
+.GL-wrapper .person-centered-course {
+    background-image: url("icon_person_centered-gfvb.png"); }
+  /* line 216, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .evaluation-observation-course {
+    background-image: url("icon_evaluation_observation-075x.png"); }
+  /* line 219, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .empowerment-course {
+    background-image: url("icon_empowerment-z1hm.png"); }
+  /* line 222, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .crisis-prevention-course {
+    background-image: url("icon_crisis_prevention-4mgl.png"); }
+  /* line 225, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .health-wellness-course {
+    background-image: url("icon_health_wellness-ga5r.png"); }
+  /* line 228, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .safety-course {
+    background-image: url("icon_safety-ecnh.png"); }
+  /* line 231, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .professionalism-course {
+    background-image: url("icon_professionalism-535d.png"); }
+  /* line 234, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .community-inclusion-course {
+    background-image: url("icon_community_inclusion-88pz.png"); }
+  /* line 237, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .community-living-course {
+    background-image: url("icon_community_living-bwob.png"); }
+  /* line 240, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .cultural-competency-course {
+    background-image: url("icon_cultural_competency-zask.png"); }
+  /* line 243, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .education-course {
+    background-image: url("icon_education-373c.png"); }
+  /* line 246, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .communication-course {
+    background-image: url("icon_communication-2vk9.png"); }
+  /* line 214, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper span.text-highlight {
+    background-color: #F6C81A; }
+  /* line 217, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper span.text-accent {
+    color: #BF2026;
+    font-weight: 500; }
+  /* line 221, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper blockquote {
+    background-color: #EBF1F6;
+    margin-top: 0.75em;
+    margin-bottom: 1.125em;
+    color: #5289B3;
+    padding: 3em 3em 2.25em 7.5em;
+    background-image: url("quote-aaoq.svg");
+    background-repeat: no-repeat;
+    background-position: 7% 30px;
+    background-size: 10%;
+    display: inline-block;
+    border-radius: 6px; }
+    /* line 233, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper blockquote span {
+      font-weight: 500;
+      font-style: italic; }
+  /* line 238, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper img {
+    border: 2px solid #C5D2DB;
+    margin-bottom: 1.125em;
+    box-sizing: border-box; }
+  /* line 243, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .caption {
+    position: relative;
+    background-color: #5289B3;
+    display: block;
+    color: white;
+    font-size: 0.88583em;
+    line-height: 1.7;
+    margin-top: -1.95em;
+    border: 2px solid #C5D2DB;
+    border-top: none !important;
+    padding: 1em;
+    box-sizing: border-box; }
+    /* line 255, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .caption a {
+      color: white; }
+  /* line 259, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper ul, .GL-wrapper ol {
+    margin-bottom: 1em;
+    padding: 0 0 0 1em;
+    list-style-position: outside;
+    border-radius: 6px; }
+    /* line 264, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper ul li, .GL-wrapper ol li {
+      padding-bottom: 0.75em; }
+  /* line 268, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper ul.circles {
+    padding-left: 2em;
+    list-style-image: url("blue-bullet-005g.svg"); }
+    /* line 272, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper ul.circles li {
+      padding-left: 1em; }
+  /* line 278, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper ul.arrows li:before {
+    content: "▶";
+    padding-right: 1.6em;
+    color: #BF2026;
+    font-size: 0.7331em; }
+  /* line 286, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper ol {
+    list-style: decimal;
+    padding-left: 2em; }
+    /* line 289, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper ol li {
+      padding-left: 0.5em; }
+    /* line 292, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper ol ol {
+      list-style: lower-alpha; }
+  /* line 296, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .box1 {
+    padding: 2em;
+    margin-bottom: 0.75em;
+    border-radius: 6px;
+    min-height: 8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box; }
+    /* line 308, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    
+    /* line 312, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .box1 img {
+      margin: 0px;
+      margin-right: 1em;
+      border: none; }
+ .GL-wrapper .box1 ol:last-child, .GL-wrapper .box1 ul:last-child, .GL-wrapper .box1 p:last-child {
+      margin-bottom: 0px;
+      padding-bottom: 0px; }
+  /* line 318, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .box2 {
+    padding: 2em;
+    margin-bottom: 0.75em;
+    border-radius: 6px;
+    min-height: 8em;
+    box-sizing: border-box; }
+    /* line 324, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .box2 ol:last-child, .GL-wrapper .box2 ul:last-child, .GL-wrapper .box2 p:last-child {
+      margin-bottom: 0px;
+      padding-bottom: 0px; }
+    /* line 328, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .box2 img {
+      margin: 0px;
+      border: none;
+      margin-left: calc(50% - 25px); }
+.GL-wrapper .box2 .box-title {
+      text-align: center; }
+      /* line 402, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .box2 .box-title img {
+        margin-left: 0;
+        width: 20px;
+        height: auto;
+        margin-right: 10px;
+        vertical-align: middle; }
+  /* line 334, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .table1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em; }
+    /* line 338, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table1 td, .GL-wrapper .table1 th {
+      border: 2px solid white;
+      padding: 0.75em; }
+    /* line 343, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table1 tr:nth-child(odd) {
+      background-color: #EBF1F6; }
+    /* line 346, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table1 tr:nth-child(even) {
+      background-color: #E4E9ED; }
+    /* line 351, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table1 thead th {
+      background-color: #5289B3;
+      color: white;
+      border-top: 0px; }
+      /* line 358, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .table1 thead th:first-child {
+        border-radius: 6px 0 0 0;
+        border-left: 0px; }
+      /* line 363, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .table1 thead th:last-child {
+        border-radius: 0 6px 0 0;
+        border-right: 0px; }
+    /* line 373, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table1 tbody tr td:first-child {
+      border-left: 0px; }
+    /* line 376, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table1 tbody tr td:last-child {
+      border-right: 0px; }
+    /* line 381, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table1 tbody tr:last-child td {
+      border-bottom: 0px; }
+      /* line 386, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .table1 tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 6px; }
+      /* line 389, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .table1 tbody tr:last-child td:last-child {
+        border-radius: 0 0 6px 0; }
+  /* line 397, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .table2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em; }
+    /* line 401, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table2 td, .GL-wrapper .table2 th {
+      border: 2px solid white;
+      padding: 0.75em; }
+    /* line 406, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table2 tr:nth-child(odd) {
+      background-color: #F7F1E4; }
+    /* line 409, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table2 tr:nth-child(even) {
+      background-color: #EDE7DA; }
+    /* line 414, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table2 thead th {
+      background-color: #F6C81A;
+      border-top: 0px; }
+      /* line 420, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .table2 thead th:first-child {
+        border-radius: 6px 0 0 0;
+        border-left: 0px; }
+      /* line 425, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .table2 thead th:last-child {
+        border-radius: 0 6px 0 0;
+        border-right: 0px; }
+ /* line 528, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper a.button-a {
+    display: inline-block;
+    border-radius: 6px;
+    margin: 4px;
+    color: white;
+    text-decoration: white; }
+    /* line 435, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table2 tbody tr td:first-child {
+      border-left: 0px; }
+    /* line 438, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table2 tbody tr td:last-child {
+      border-right: 0px; }
+    /* line 443, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table2 tbody tr:last-child td {
+      border-bottom: 0px; }
+      /* line 448, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .table2 tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 6px; }
+      /* line 451, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .table2 tbody tr:last-child td:last-child {
+        border-radius: 0 0 6px 0; }
+  /* line 459, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .table3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em; }
+    /* line 463, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table3 td, .GL-wrapper .table3 th {
+      border: 2px solid white;
+      padding: 0.75em;
+      border-bottom: 2px solid #ccc; }
+    /* line 469, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table3 tr:nth-child(odd) {
+      background-color: #EEEDED; }
+    /* line 474, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table3 thead th {
+      background-color: white;
+      font-weight: 500; }
+    /* line 481, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .table3 tbody tr:last-child {
+      border-bottom: 1px solid #ccc; }
+  /* line 487, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .button {
+    border-radius: 6px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1) inset;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    box-sizing: border-box; }
+    /* line 505, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .button:focus {
+      outline: none; }
+    /* line 508, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .button:hover {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2) inset; }
+  /* line 514, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .btn-img {
+    padding: 0.75em 1.5em 0.75em 1.5em;
+    font-size: 1.32875em;
+    border: none; }
+    /* line 518, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .btn-img img {
+      max-width: 35px;
+      max-height: 35px;
+      height: auto;
+      border: none;
+      margin: 0 0.75em 0 0; }
+  /* line 527, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .btn-round1 {
+    border-radius: 100px;
+    width: 75px;
+    height: 75px; }
+    /* line 532, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .btn-round1 img {
+      margin: 0px;
+      margin-left: calc(50% - 18px);
+      max-width: 36px;
+      max-height: 36px; }
+  /* line 539, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .btn-round2 {
+    border-radius: 100px;
+    border: solid 2px #5289B3;
+    width: 75px;
+    height: 75px; }
+    /* line 545, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .btn-round2 img {
+      margin: 0px;
+      margin-left: calc(50% - 18px);
+      max-width: 36px;
+      max-height: 36px; }
+  /* line 552, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .btn-arrow-left {
+    border-radius: 100px;
+    border: solid 2px #5289B3;
+    width: 75px;
+    height: 75px;
+    background-image: url("arrow-left-blue-o84k.svg");
+    background-position: center;
+    background-repeat: no-repeat; }
+  /* line 562, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .btn-arrow-right {
+    border-radius: 100px;
+    border: solid 2px #5289B3;
+    width: 75px;
+    height: 75px;
+    background-image: url("arrow-right-blue-y7wj.svg");
+    background-position: center;
+    background-repeat: no-repeat; }
+  /* line 572, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .btn1 {
+    padding: 0.75em 1.5em 0.75em 1.5em;
+    font-size: 1.32875em;
+    border: none; }
+  /* line 577, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .btn2 {
+    padding: 0.75em 1.5em 0.75em 1.5em;
+    font-weight: 500;
+    font-size: inherit;
+    border: none; }
+  /* line 583, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .btn3-blue {
+    padding: 0.75em 1.5em 0.75em 1.5em;
+    border: solid 2px #5289B3;
+    font-size: 1.32875em;
+    color: #5289B3;
+    border-radius: 6px; }
+  /* line 590, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .btn3-yellow {
+    padding: 0.75em 1.5em 0.75em 1.5em;
+    border: solid 2px #F6C81A;
+    font-size: 1.32875em;
+    border-radius: 6px; }
+  /* line 596, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0.75em; }
+    /* line 603, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .tiles div {
+      padding: 1.5em;
+      width: 30%;
+      min-width: 200px;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      margin: 0.375em;
+      border-radius: 6px;
+      box-sizing: border-box; }
+    /* line 616, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .tiles p {
+      line-height: 1.6; }
+      /* line 618, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+      .GL-wrapper .tiles p:last-child {
+        padding-bottom: 0px;
+        margin-bottom: 0px; }
+  /* line 624, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .video-container {
+    position: relative;
+    border: solid 2px #C5D2DB;
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    padding-bottom: 56.25%;
+    margin-bottom: 27px; }
+    /* line 632, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .video-container .video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  /* line 640, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .audio-container {
+    background-color: #FAFAFA;
+    width: 100%;
+    height: auto;
+    padding: 2.1em 1.5em 1.875em 38%;
+    border-radius: 6px;
+    background-image: url("icon-audio-blue-5jqo.svg");
+    background-repeat: no-repeat;
+    background-position: 26% 50%;
+    background-size: 11%;
+    margin-bottom: 0.75em; }
+    /* line 652, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .audio-container p {
+      font-weight: 300;
+      margin-bottom: 0.75em;
+      padding-left: 0.375em;
+      color: #5289B3; }
+  /* line 659, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .GL-wrapper .transcripts-container {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    margin-bottom: 0.75em; }
+    /* line 663, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .transcripts-container button {
+      width: 100%;
+      margin: 0px;
+      font-size: 1.063em;
+      padding: 0.75em 1.5em 0.75em 3em;
+      background-image: url("icon-transcripts-white-q84l.svg");
+      background-repeat: no-repeat;
+      background-position: 1em 50%;
+      background-size: 24px;
+}
+    /* line 668, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .transcripts-container .transcripts {
+      overflow: hidden;
+      -webkit-transition: height 8s, padding .8s, opacity .1s;
+      transition: height 8s, padding .8s, opacity .1s;
+      padding: 1.5em;
+      background-color: #EBF1F6;
+      margin-top: -4px;
+      border-radius: 0 0 6px 6px;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+    /* line 682, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .GL-wrapper .transcripts-container .trans-hidden {
+      height: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      opacity: 0 !important;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+
+.GL-wrapper .flip-card .card {
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+  	box-shadow: 0px 1px 5px #ccc; }
+
+/* line 694, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.size-100 {
+  width: 100%;
+  height: auto; }
+
+/* line 698, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.size-50 {
+  width: 50%;
+  height: auto; }
+
+/* line 702, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.size-33 {
+  width: 33.33%;
+  height: auto; }
+
+/* line 706, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.size-25 {
+  width: 25%;
+  height: auto; }
+
+/* line 710, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.size-66 {
+  width: 66.66%;
+  height: auto; }
+
+/* line 714, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.align-l {
+  float: left;
+  margin-right: 2em; }
+
+/* line 718, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.align-r {
+  float: right;
+  margin-left: 2em; }
+
+/* line 723, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.padding-left {
+  padding-left: 1em; }
+
+/* line 727, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.padding-right {
+  padding-right: 1em; }
+
+/* line 731, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.padding-top {
+  padding-top: 1em; }
+
+/* line 735, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.padding-bottom {
+  padding-top: 1em; }
+
+/* line 739, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.text-black {
+  color: #2B2D2E; }
+
+/* line 743, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.text-blue {
+  color: #5289B3; }
+
+/* line 747, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.text-green {
+  color: #6AA231; }
+
+/* line 751, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.text-red {
+  color: #BF2026; }
+
+/* line 755, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.text-align-left {
+  text-align: left; }
+
+/* line 759, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.text-align-right {
+  text-align: right; }
+
+/* line 763, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.text-align-center {
+  text-align: center; }
+
+/* line 767, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.bg-gray {
+  background-color: #EEEDED; }
+
+/* line 771, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.bg-blue {
+  background-color: #5289B3;
+  color: white; }
+  /* line 790, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .bg-blue a {
+    color: white; }
+    /* line 792, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .bg-blue a:hover {
+      color: white; }
+
+/* line 798, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.bg-l-blue {
+  background-color: #EBF1F6; }
+
+/* line 802, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.bg-green {
+  background-color: #6AA231;
+  color: white; }
+  /* line 805, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .bg-green a {
+    color: white; }
+    /* line 807, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .bg-green a:hover {
+      color: white; }
+
+/* line 813, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.bg-beige {
+  background-color: #F7F1E4; }
+
+/* line 817, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.bg-red {
+  background-color: #BF2026;
+  color: white; }
+  /* line 820, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .bg-red a {
+    color: white; }
+    /* line 822, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+    .bg-red a:hover {
+      color: white; }
+
+/* line 812, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.bg-yellow {
+  background-color: #F6C81A; }
+
+/* line 816, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+.no-border {
+  border: none !important; }
+  /* line 913, /Users/rafaelramos/Documents/Rafael/LO/css/styles.scss */
+  .no-border img {
+    border: none; }
+
+.small-text {
+  font-size: 0.88583em; }
+
+/*# sourceMappingURL=styles.css.map */
